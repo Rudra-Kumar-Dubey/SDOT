@@ -21,6 +21,5 @@ public class uniquedigits {
             }
         }
         System.out.println("Unique Digits: " + c);
-
     }
 }
