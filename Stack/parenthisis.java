@@ -44,10 +44,11 @@ public class parenthisis {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Stack<Character> s = new Stack<Character>();
-        System.out.println("Enter Equation");
-        String eq = sc.nextLine();
-        System.out.println(checkPar(eq, s));
+        try (Scanner sc = new Scanner(System.in)) {
+            Stack<Character> s = new Stack<Character>();
+            System.out.println("Enter Equation");
+            String eq = sc.nextLine();
+            System.out.println(checkPar(eq, s));
+        }
     }
 }

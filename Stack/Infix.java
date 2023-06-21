@@ -37,11 +37,12 @@ public class Infix {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Stack<Character> s = new Stack<Character>();
-        System.out.println("Enter Infix Equation");
-        String infix = sc.nextLine();
-        System.out.println(postFix(infix, s));
+        try (Scanner sc = new Scanner(System.in)) {
+            Stack<Character> s = new Stack<Character>();
+            System.out.println("Enter Infix Equation");
+            String infix = sc.nextLine();
+            System.out.println(postFix(infix, s));
+        }
 
     }
 

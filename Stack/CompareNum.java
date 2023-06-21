@@ -5,7 +5,6 @@ public class CompareNum {
         String s = "How are you all doing 1234 here 456 t 456";
         String k = "";
         Vector<String> arr = new Vector<String>(1);
-        int j = 0;
         for (int i = 0; i < s.length(); i++) {
             if (Character.isDigit(s.charAt(i))) {
                 if (i + 1 >= s.length()) {
@@ -22,7 +21,6 @@ public class CompareNum {
                     System.out.println(k);
                     arr.add(k);
                     k = "";
-                    j++;
                 }
             }
         }
