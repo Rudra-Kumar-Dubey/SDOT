@@ -11,7 +11,7 @@ public class LinkedList {
         }
     }
 
-    public static void print(LinkedList l) {
+    public static void print(LinkedList l) {    
         node curr = l.head;
         while (curr != null) {
             System.out.println(curr.data);
