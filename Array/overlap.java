@@ -33,7 +33,6 @@ public class overlap {
                     System.out.println(1);
                 }
             } else {
-                System.out.println("else");
                 System.out.println(0);
             }
         }
