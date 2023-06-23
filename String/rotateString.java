@@ -4,10 +4,10 @@ public class rotateString {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             String s = "rudra";
-            int p = 3;
+            int p = 4;
             String a = "";
             String b = "";
-            char d = 'R';
+            char d = 'L';
             if (p < s.length()) {
                 if (d == 'L') {
                     a = s.substring(0, p);
