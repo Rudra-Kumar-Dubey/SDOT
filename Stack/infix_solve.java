@@ -3,29 +3,8 @@ import java.util.Stack;
 
 public class infix_solve {
     static int precedence(char ch) {
-        int p = 1;
-        switch (ch) {
-            case '(':
-                p = 4;
-                break;
-            case ')':
-                p = 4;
-                break;
-            case '*':
-                p = 3;
-                break;
-            case '/':
-                p = 3;
-                break;
-            case '+':
-                p = 2;
-                break;
-            case '-':
-                p = 2;
-                break;
-            default:
-                break;
-        }
+        int p = 0;
+        
         return p;
     }
 
@@ -36,6 +15,12 @@ public class infix_solve {
             if (!s.isEmpty()) {
                 char ch = infix.charAt(i);
                 precedence(ch);
+                if(precedence(ch) == 1){
+                    s.push(infix.charAt(i));
+                }else if(precedence(ch) > precedence(s.peek())){
+                    
+
+                }
 
             } else {
                 s.push(infix.charAt(i));
