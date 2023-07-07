@@ -121,6 +121,31 @@ public class BinaryTrees {
         return Math.max(Dia, Math.max(leftDia, rightDia));
     }
 
+    static class TreeInfo {
+        int h;
+        int d;
+
+        TreeInfo(int h, int d) {
+            this.d = d;
+            this.h = h;
+        }
+    }
+
+    public static TreeInfo dia2(Node root) {
+        if (root == null) {
+            return new TreeInfo(0, 0);
+        }
+        TreeInfo left = dia2(root.left);
+        TreeInfo right = dia2(root.right);
+
+        int Height = Math.max(left.h, right.h) + 1;
+        int Dia1 = left.d;
+        int Dia2 = right.d;
+        int Dia3 = left.h + right.h + 1;
+        int Dia = Math.max(Math.max(Dia1, Dia2), Dia3);
+        return new TreeInfo(Height, Dia);
+    }
+
     public static void main(String[] args) {
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
         BinaryTree bt = new BinaryTree();
@@ -141,5 +166,7 @@ public class BinaryTrees {
         System.out.println(height(root));
         System.out.println("Diameter");
         System.out.println(dia(root));
+        System.out.println("Diameter2");
+        System.out.println(dia2(root).d);
     }
 }
