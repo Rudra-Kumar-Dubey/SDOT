@@ -166,7 +166,5 @@ public class BinaryTrees {
         System.out.println(height(root));
         System.out.println("Diameter");
         System.out.println(dia(root));
-        System.out.println("Diameter2");
-        System.out.println(dia2(root).d);
     }
 }
