@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class sumN {
     public static int Sum(int n, int sum) {

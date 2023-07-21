@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class fac {
     public static int fact(int n) {

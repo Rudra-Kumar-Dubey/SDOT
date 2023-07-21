@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class PrintOne2Five {
     public static void OTF(int n) {
