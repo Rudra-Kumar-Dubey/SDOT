@@ -1,6 +1,7 @@
 import java.util.*;
 
 class Chocolate_Distribution {
+
     public static long findMinDiff(ArrayList<Integer> a, int n, int m) {
         long Min = Long.MAX_VALUE;
         Collections.sort(a);
@@ -24,6 +25,5 @@ class Chocolate_Distribution {
         a.add(9);
         a.add(12);
         System.out.println(findMinDiff(a, 8, 5));
-
     }
 }
