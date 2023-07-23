@@ -17,7 +17,7 @@ public class hashing {
         }
         System.out.println(set.size());
         System.out.println(set);
-        Iterator it = set.iterator();
+        Iterator<Integer> it = set.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }

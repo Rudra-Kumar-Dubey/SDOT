@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.LinkedList;
 
 public class BinaryTrees {
     static class Node {
@@ -60,7 +61,7 @@ public class BinaryTrees {
         if (root == null) {
             return;
         }
-        Queue<Node> q = new LinkedList<>();
+        LinkedList<Node> q = new LinkedList<>(); // Queue
         q.add(root);
         q.add(null);
         while (!q.isEmpty()) {

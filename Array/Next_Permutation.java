@@ -17,7 +17,6 @@ class Next_Permutation {
     public static void nextPermutation(int[] nums) {
         int bp = -1;
         int gp = -1;
-        int n = nums.length;
         for (int i = nums.length - 2; i >= 0; i--) {
             if (nums[i + 1] > nums[i]) {
                 bp = i;
