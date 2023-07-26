@@ -7,7 +7,7 @@ public class rotateString {
             int p = 4;
             String a = "";
             String b = "";
-            char d = 'L';
+            char d = 'R';
             if (p < s.length()) {
                 if (d == 'L') {
                     a = s.substring(0, p);
