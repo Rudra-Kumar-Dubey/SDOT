@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-class MergedIntervals {
+public class MergedIntervals {
 
     public static int[][] merge(int[][] intervals) {
         if (intervals == null || intervals.length <= 1) {
