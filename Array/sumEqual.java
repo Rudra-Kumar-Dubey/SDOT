@@ -32,5 +32,6 @@ class sumEqual {
         if (flag == 0) {
             System.out.println(-1);
         }
+        sc.close();
     }
 }
