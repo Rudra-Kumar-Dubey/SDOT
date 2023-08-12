@@ -16,13 +16,7 @@ public class revWord {
                 str += " ";
             }
         }
-        int l = str.length() - 1;
-        if (str.charAt(l) == ' ') {
-            while (str.charAt(l) == ' ') {
-                l--;
-            }
-            str = str.substring(0, l + 1);
-        }
+        str = str.substring(0, str.length() - 1);
         return str;
     }
 
