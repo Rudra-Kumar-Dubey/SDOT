@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 class conco {
     public static List<Integer> findSubstring(String s, String[] words) {
         HashMap<String, Integer> have = new HashMap<>();
@@ -31,6 +35,8 @@ class conco {
     }
 
     public static void main(String[] args) {
-
+        String s = "wordgoodgoodgoodbestword";
+        String[] words = { "word", "good", "best", "word" };
+        System.out.println(findSubstring(s, words));
     }
 }
