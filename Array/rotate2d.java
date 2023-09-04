@@ -25,7 +25,7 @@ public class rotate2d {
     public static void main(String[] args) {
         int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         int n = matrix.length;
-        System.out.println("Before Rotations");
+        System.out.println("Before Rotation: ");
         for (int i = 0; i < n; i++) {
             System.out.println();
             for (int j = 0; j < n; j++) {
@@ -34,7 +34,7 @@ public class rotate2d {
         }
         System.out.println();
         System.out.println();
-        System.out.println("After rotation");
+        System.out.println("After Rotation");
         rotate(matrix);
         for (int i = 0; i < n; i++) {
             System.out.println();
