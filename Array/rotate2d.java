@@ -34,7 +34,7 @@ public class rotate2d {
         }
         System.out.println();
         System.out.println();
-        System.out.println("After Rotation");
+        System.out.println("After Rotation: ");
         rotate(matrix);
         for (int i = 0; i < n; i++) {
             System.out.println();
