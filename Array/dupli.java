@@ -31,7 +31,7 @@ class dupli {
 
     public static void main(String[] args) {
         int[] nums = { 1, 2, 3, 1 };
-        int k = 3;
+        int k = 2;
         System.out.println(containsNearbyDuplicateNOP(nums, k));
         System.out.println(containsNearbyDuplicate(nums, k));
     }
