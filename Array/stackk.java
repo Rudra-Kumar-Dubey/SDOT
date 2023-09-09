@@ -42,6 +42,5 @@ public class stackk {
         System.out.println(st.top());
         st.pop();
         System.out.println(st.top());
-
     }
 }
