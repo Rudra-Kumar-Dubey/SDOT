@@ -11,7 +11,6 @@ public class ques6 {
                 System.out.println("Transaction Not Successful");
                 break;
             }
-
         }
         if (f == 0) {
             System.out.println("Transaction Successful");
