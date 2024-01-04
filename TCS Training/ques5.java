@@ -15,6 +15,5 @@ public class ques5 {
         int X = 2;
         int n = N - I;
         System.out.println(fact(n) / (fact(X) * fact(n - X)));
-
     }
 }
